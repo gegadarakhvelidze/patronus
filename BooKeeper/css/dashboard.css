@@ -70,6 +70,25 @@ nav {
   top: clamp(50px, 7%, 100px);
   background-color: #505050;
   overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.tab {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5em 0;
+  text-align: center;
+  font-size: 0.9em;
+  color: #F4F4F4;
+}
+
+.tab .tab-icon {
+  margin: 0 auto;
+}
+
+.tab img {
+  width: 50%;
 }
 
 .main-container {
@@ -79,6 +98,61 @@ nav {
   left: clamp(50px, 5%, 100px);
   padding-bottom: calc(clamp(50px, 5%, 100px) + 1%);
   background-color: #F4F4F4;
+  display: flex;
+}
+
+.filter-container {
+  width: 25%;
+}
+
+.filter {
+  background-color: white;
+  border-radius: 0.8em;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.16);
+  padding: 1em 2em;
+  margin: 1em;
+  display: flex;
+  flex-direction: column;
+}
+
+.filter h2 {
+  margin: 1em 0;
+  font-size: 2.3em;
+  color: #505050;
+}
+
+.filter .field {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5em 0;
+}
+
+.filter .field label {
+  margin: 0.5em 0;
+}
+
+.filter .field select {
+  font-family: "Roboto";
+  background-color: #F4F4F4;
+  padding: 1em 0.5em;
+  border-radius: 0.5em;
+  border: none;
+}
+
+.filter .field select:focus {
+  outline: none;
+}
+
+.filter button {
+  margin: 1em 0;
+  background-color: #04BD9B;
+  border: none;
+  border-radius: 0.5em;
+  padding: 1em;
+  color: white;
+  font-family: "roboto";
+  font-size: 1.2em;
+  font-weight: bolder;
 }
 
 .term h2 {
@@ -92,7 +166,7 @@ nav {
 }
 
 .main-container-shrinked {
-  width: 55%;
+  width: 70%;
 }
 
 .center-container {
@@ -103,7 +177,7 @@ nav {
 }
 
 .center-container-shrinked {
-  width: 80%;
+  width: 60%;
 }
 
 .table-column-names, .course-entry {
@@ -122,9 +196,9 @@ nav {
 }
 
 .course-entry-container {
+  background-color: white;
   border-radius: 0.8em;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.16);
-  background-color: white;
   padding: .8em .8em;
   margin: .5em 0;
 }
@@ -136,7 +210,7 @@ nav {
 .details-panel {
   display: none;
   height: calc(100% - clamp(50px, 7%, 100px));
-  width: calc(45% - clamp(50px, 5%, 100px));
+  width: calc(30% - clamp(50px, 5%, 100px));
   background-color: white;
   position: fixed;
   z-index: 1;
@@ -251,6 +325,19 @@ nav {
   .main-container {
     width: 100%;
     left: 0;
+    flex-direction: column;
+  }
+  .filter-container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .filter-container .filter {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .filter-container h2 {
+    margin: .7em 0;
+    font-size: 2.1em;
   }
   .center-container {
     width: 90%;

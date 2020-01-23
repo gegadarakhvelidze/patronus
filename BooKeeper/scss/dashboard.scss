@@ -1,5 +1,6 @@
 $primary-color: #04BD9B;
 $secondary-color: #505050;
+$background-color: #F4F4F4;
 $nav-height: clamp(50px, 7%, 100px);
 $sidebar-width: clamp(50px, 5%, 100px);
 $tabbar-height: clamp(50px, 5%, 100px);
@@ -52,7 +53,7 @@ nav {
     width: 25%;
     height: 50%;
     border-radius: 500px;
-    background-color: #F4F4F4;
+    background-color: $background-color;
     padding: 0 1em;
 }
 
@@ -76,6 +77,25 @@ nav {
     top: $nav-height;
     background-color: #505050;
     overflow-x: hidden;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.tab {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5em 0;
+    text-align: center;
+    font-size: 0.9em;
+    color: $background-color;
+
+    .tab-icon {
+        margin: 0 auto;
+    }
+    img {
+        width: 50%;
+    }
 }
 
 .main-container {
@@ -84,12 +104,70 @@ nav {
     top: $nav-height;
     left: $sidebar-width;
     padding-bottom: calc(#{$tabbar-height} + 1%);
-    background-color: #F4F4F4;
+    background-color: $background-color;
+    display: flex;
+}
+
+@mixin card {
+    background-color: white;
+    border-radius: 0.8em;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.16);
 }
 
 @mixin section-header {
     margin: 1em 0;
     font-size: 2.3em;
+}
+
+.filter-container {
+    width: 25%;
+}
+
+.filter {
+    @include card();
+    padding: 1em 2em;
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
+    
+    h2 {
+        @include section-header();
+        color: $secondary-color;
+    }
+
+    .field {
+        display: flex;
+        flex-direction: column;
+        padding: 0.5em 0;
+
+        label {
+            margin: 0.5em 0;
+        }
+
+        select {
+            font-family: "Roboto";
+            background-color: $background-color;
+            padding: 1em 0.5em;
+            border-radius: 0.5em;
+            border: none;
+        }
+        
+        select:focus {
+            outline: none;
+        }
+    }
+
+    button {
+        margin: 1em 0;
+        background-color: $primary-color;
+        border: none;
+        border-radius: 0.5em;
+        padding: 1em;
+        color: white;
+        font-family: "roboto";
+        font-size: 1.2em;
+        font-weight: bolder;
+    }
 }
 
 .term h2 {
@@ -102,7 +180,7 @@ nav {
 }
 
 .main-container-shrinked {
-    width: 55%;
+    width: 70%;
 }
 
 .center-container {
@@ -113,7 +191,7 @@ nav {
 }
 
 .center-container-shrinked {
-    width: 80%;
+    width: 60%;
 }
 
 .table-column-names, .course-entry {
@@ -131,14 +209,8 @@ nav {
     flex: .2 10%;
 }
 
-@mixin card {
-    border-radius: 0.8em;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.16);
-}
-
 .course-entry-container {
     @include card();
-    background-color: white;
     padding: .8em .8em;
     margin: .5em 0;
 }
@@ -150,7 +222,7 @@ nav {
 .details-panel {
     display: none;
     height: calc(100% - #{$nav-height});
-    width: calc(45% - #{$sidebar-width});
+    width: calc(30% - #{$sidebar-width});
     background-color: white;
     position: fixed;
     z-index: 1;
@@ -263,6 +335,24 @@ nav {
     .main-container {
         width: 100%;
         left: 0;
+        flex-direction: column;
+    }
+
+    @mixin section-header-mobile {
+        margin: .7em 0;
+        font-size: 2.1em;
+    }
+
+    .filter-container {
+        width: 90%;
+        margin: 0 auto;
+        .filter {
+            margin-left: 0;
+            margin-right: 0;
+        }
+        h2 {
+            @include section-header-mobile();
+        }
     }
 
     .center-container {
@@ -281,11 +371,6 @@ nav {
         font-size: .8em;
     }
     
-    @mixin section-header-mobile {
-        margin: .7em 0;
-        font-size: 2.1em;
-    }
-
     .term h2 {
         @include section-header-mobile();
     }
@@ -301,6 +386,7 @@ nav {
     .details-container > h2 {
         @include section-header-mobile();
     }
+
 }
 
 
