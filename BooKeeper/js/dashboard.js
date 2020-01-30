@@ -153,6 +153,52 @@ handleCourses = () => {
     mainContainer.innerHTML = filterContainer + mainContainer.innerHTML;
 }
 
+handleProfile = () => {
+    // hardcoded demo user page
+    const mainContainerHTML = `
+        <div class="center-container">
+            <div class="info-card">
+                <img src="../BooKeeper/assets/DU.png" alt="Grade Distribution">
+                <h2>Demo User</h2>
+                <h3>Liberal Arts</h3>
+                <table class="info-table">
+                    <tbody>
+                        <tr>
+                            <td>Sex:</td>
+                            <td>Male</td>
+                        </tr>
+                        <tr>
+                            <td>Email:</td>
+                            <td>random@email.com</td>
+                        </tr>
+                        <tr>
+                            <td>Nationality:</td>
+                            <td>Digital</td>
+                        </tr>
+                        <tr>
+                            <td>Date of Birth:</td>
+                            <td>07-12-1979</td>
+                        </tr>
+                        <tr>
+                            <td>Address:</td>
+                            <td>21st Jump Street</td>
+                        </tr>
+                        <tr>
+                            <td>Total Credits:</td>
+                            <td>66</td>
+                        </tr>
+                        <tr>
+                            <td>GPA:</td>
+                            <td>3.72</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    `;
+    document.querySelector(".main-container").innerHTML = mainContainerHTML;
+
+}
 
 var useHash = true;
 var hash = '#';
@@ -161,17 +207,17 @@ var router = new Navigo(null, useHash, hash);
 router.on({
 	"/dashboard": () => {
         handleDashboard();
-		console.log("dashboard");
 	},
 	"/courses": () => {
         handleCourses();
-		console.log("courses");
 	},
-	"*": () => {
-		console.log("home");
+	"/profile": () => {
+        handleProfile();
+	},
+	"/*": () => {
+        handleDashboard();
 	}
 }).resolve();
-
 
 document.addEventListener("click", (e) => {
     if (e.target.closest(".course-entry-container")) {

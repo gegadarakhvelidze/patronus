@@ -312,6 +312,46 @@ nav {
   width: 80%;
 }
 
+.info-card {
+  background-color: white;
+  border-radius: 0.8em;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.16);
+  padding: 1em;
+  margin: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info-card img {
+  width: 20%;
+}
+
+.info-card h2 {
+  margin: 1em 0;
+  font-size: 2.3em;
+  margin: 0;
+  color: #505050;
+}
+
+.info-card h3 {
+  font-weight: normal;
+  margin: 1em 0;
+  font-size: 1.5em;
+  margin-top: 0;
+  color: #505050;
+}
+
+.info-table {
+  width: 60%;
+}
+
+.info-table td {
+  background-color: #F4F4F4;
+  border-radius: 0.5em;
+  padding: 0.7em;
+}
+
 @media only screen and (max-width: 600px) {
   .remove-on-mobile {
     display: none;
@@ -321,6 +361,27 @@ nav {
     width: 100%;
     bottom: 0;
     top: auto;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .sidebar .tab {
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0;
+    height: 100%;
+  }
+  .sidebar .tab .tab-icon {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .sidebar .tab .tab-icon img {
+    width: auto;
+    height: 70%;
+  }
+  .sidebar .tab .tab-name {
+    display: none;
   }
   .main-container {
     width: 100%;
@@ -365,16 +426,53 @@ nav {
     margin: .7em 0;
     font-size: 2.1em;
   }
+  .info-card img {
+    width: 40%;
+  }
+  .info-card h2 {
+    margin: .7em 0;
+    font-size: 2.1em;
+    margin: 0;
+  }
+  .info-card h3 {
+    font-weight: normal;
+    margin: 1em 0;
+    font-size: 1.5em;
+    margin-top: 0;
+  }
+  .info-card .info-table {
+    width: 90%;
+  }
 }
 
 @media only screen and (min-width: 600px) and (max-width: 800px) {
   .center-container {
     width: 90%;
   }
+  .tab {
+    flex-direction: column;
+    padding: 1.5em 0.2em;
+  }
+  .tab .tab-name {
+    display: none;
+  }
+  .tab img {
+    width: 80%;
+  }
 }
 
 @media only screen and (min-width: 800px) and (max-width: 992px) {
   .center-container {
+    width: 80%;
+  }
+  .tab {
+    flex-direction: column;
+    padding: 1.5em 0.2em;
+  }
+  .tab .tab-name {
+    display: none;
+  }
+  .tab img {
     width: 80%;
   }
 }

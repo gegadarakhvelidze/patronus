@@ -318,6 +318,39 @@ nav {
     }
 }
 
+.info-card {
+    @include card();
+    padding: 1em;
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img {
+        width: 20%;
+    }
+
+    h2 {
+        @include section-header();
+        margin: 0;
+        color: $secondary-color;
+    }
+
+    h3 {
+        @include section-subheader();
+        margin-top: 0;
+        color: $secondary-color;
+    }
+}
+
+.info-table {
+    width: 60%;
+    td {
+        background-color: $background-color;
+        border-radius: 0.5em;
+        padding: 0.7em;
+    }
+}
+
 // responsive layout
 
 @media only screen and (max-width: 600px) {
@@ -330,6 +363,28 @@ nav {
         width: 100%; 
         bottom: 0;
         top: auto;
+
+        flex-direction: row;
+        justify-content: space-around;
+        .tab {
+            flex-direction: column;
+            justify-content: space-around;
+            padding: 0;
+            height: 100%;
+            .tab-icon {
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                img {
+                    width: auto;
+                    height: 70%;
+                }
+            }
+            .tab-name {
+                display: none;
+            }
+        }
     }
 
     .main-container {
@@ -387,6 +442,26 @@ nav {
         @include section-header-mobile();
     }
 
+    .info-card {
+        
+        img {
+            width: 40%;
+        }
+    
+        h2 {
+            @include section-header-mobile();
+            margin: 0;
+        }
+    
+        h3 {
+            @include section-subheader();
+            margin-top: 0;
+        }
+        .info-table {
+            width: 90%;
+        }
+    }
+
 }
 
 
@@ -394,11 +469,37 @@ nav {
     .center-container {
         width: 90%;
     }
+
+    .tab {
+        flex-direction: column;
+        padding: 1.5em 0.2em;
+        
+        .tab-name {
+            display: none;
+        }
+
+        img {
+            width: 80%;
+        }
+    }
 }
 
 @media only screen and (min-width: 800px) and (max-width: 992px) {
     .center-container {
         width: 80%;
+    }
+
+    .tab {
+        flex-direction: column;
+        padding: 1.5em 0.2em;
+        
+        .tab-name {
+            display: none;
+        }
+
+        img {
+            width: 80%;
+        }
     }
 }
 
