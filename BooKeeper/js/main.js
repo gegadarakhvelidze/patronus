@@ -74,6 +74,46 @@ class Term {
     }
 };
 
+class Category {
+    toHTML() {
+        let sectionHeader = `<h2>${this.category}</h2>`;
+        let culumnNames = `
+            <div class="table-column-names">
+                <h4 class="large-cell">Course</h4>
+                <h4 class="large-cell">Tutor</h4>
+                <h4 class="small-cell remove-on-mobile">Credits</h4>
+                <h4 class="small-cell">Selected</h4>
+            </div>
+        `;
+        let coursesHTML = "";
+        for (let course of this.courses) {
+            let courseHTML = `
+                <a href="#">
+                    <div class="course-entry-container" id=${course.id}>
+                        <div class="course-entry">
+                            <p class="large-cell">${course.name}</p>
+                            <p class="large-cell">${course.tutor.name}</p>
+                            <p class="small-cell remove-on-mobile">${course.credits}</p>
+                            <input type="checkbox" class="small-cell">
+                        </div>
+                    </div>
+                </a>
+            `;
+            coursesHTML += courseHTML.trim();
+        }
+
+        let html = `
+            <div class="term">
+                ${sectionHeader.trim()}
+                ${culumnNames.trim()}
+                ${coursesHTML.trim()}
+            </div>
+        `;
+
+        return html;
+    }
+}
+
 
 handleDashboard = () => {
     const mainContainerHTML = `
@@ -96,7 +136,7 @@ handleDashboard = () => {
     document.querySelector(".main-container").innerHTML = mainContainerHTML;
     container = document.querySelector(".center-container");
     container.innerHTML = "";
-    terms = fetch("../BooKeeper/data/courses.json")
+    terms = fetch("../BooKeeper/data/selectedCourses.json")
         .then(response => response.json())
         .then(terms => {
             for (term of terms) {
@@ -109,7 +149,7 @@ handleDashboard = () => {
 
 handleCourses = () => {
     mainContainer = document.querySelector(".main-container");
-    filterContainer = `
+    mainContainerHTML = `
         <div class="filter-container">
             <div class="filter">
                 <h2>Filter</h2>
@@ -149,8 +189,35 @@ handleCourses = () => {
                 </button>
             </div>
         </div>
+        <div class="center-container"></div>
+        <div class="details-panel">
+            <div class="details-container">
+                <div class="details-exit">
+                    <a href="#">X</a>
+                </div>
+                <h2>Course Name</h2>
+                <h3>Tutor</h3>
+                <div class="details-course-description"></div>
+                <div class="details-scores"></div>
+                <div class="details-chart">
+                    <img src="../BooKeeper/assets/Grade Distribution.png" alt="Grade Distribution">
+                </div>
+            </div>
+        </div>
     `;
-    mainContainer.innerHTML = filterContainer + mainContainer.innerHTML;
+    mainContainer.innerHTML = mainContainerHTML;
+
+    container = document.querySelector(".center-container");
+    container.innerHTML = "";
+    categories = fetch("../BooKeeper/data/categoryCourses.json")
+        .then(response => response.json())
+        .then(categories => {
+            for (category of categories) {
+                category = Object.assign(new Category(), category);
+                let categoryHTML = category.toHTML();
+                container.innerHTML += categoryHTML;
+            }
+        });
 }
 
 handleProfile = () => {
@@ -220,14 +287,16 @@ router.on({
 }).resolve();
 
 document.addEventListener("click", (e) => {
-    if (e.target.closest(".course-entry-container")) {
+    if (e.target.closest("input")){
+        return;
+    } if (e.target.closest(".course-entry-container")) {
         const courseContainer = e.target.closest(".course-entry-container");
         const container = document.querySelector(".main-container");
         const centerContainer = document.querySelector(".center-container");
         const courseDetails = document.querySelector(".details-panel");
 
         // Terrible way of fetching course by ID
-        terms = fetch("../BooKeeper/data/courses.json")
+        terms = fetch("../BooKeeper/data/selectedCourses.json")
             .then(response => response.json())
             .then(terms => {
                 let courseById;
