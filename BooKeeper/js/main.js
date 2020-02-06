@@ -282,7 +282,7 @@ router.on({
         handleProfile();
 	},
 	"/*": () => {
-        handleDashboard();
+        // handleDashboard();
 	}
 }).resolve();
 
