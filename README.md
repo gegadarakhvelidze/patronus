@@ -1,4 +1,4 @@
-# patronus
+# Patronus
 Patronus is a learning management system (LMS) bringing variety of educational tools in one place.
 
 ## Pages
@@ -13,6 +13,7 @@ Patronus is a learning management system (LMS) bringing variety of educational t
   * Outline
   * Statistics/Grade Distribution
   * History
+  * Tools Linked to Page
 * All Courses
   * Filters
   * Course Registration
