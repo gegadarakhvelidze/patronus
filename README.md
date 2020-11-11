@@ -1,5 +1,5 @@
-# Patronus
-Patronus is a learning management system (LMS) bringing variety of educational tools in one place.
+# BooKeeper
+BooKeeper is a learning management system (LMS) bringing variety of educational tools in one place.
 
 ## Pages
 * Dashboard
