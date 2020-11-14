@@ -7,29 +7,19 @@ body {
   font-family: "Roboto";
 }
 
-h2 {
-  color: #04BD9B;
-  margin: 1em 0;
-  font-size: 2.3em;
-}
-
-h4 {
-  margin: .3em 0;
-}
-
 a {
   text-decoration: none;
   color: black;
 }
 
 nav {
-  height: 7%;
+  height: clamp(50px, 7%, 100px);
   width: 100%;
   background-color: white;
   box-shadow: 0px 3px 6px rgba(50, 50, 50, 0.1);
   position: fixed;
   top: 0;
-  z-index: 1;
+  z-index: 2;
 }
 
 .nav-container {
@@ -72,23 +62,37 @@ nav {
 }
 
 .sidebar {
-  height: 93%;
-  width: 5%;
+  height: calc(100% - clamp(50px, 7%, 100px));
+  width: clamp(50px, 5%, 100px);
   position: fixed;
   z-index: 1;
   left: 0;
-  top: 7%;
+  top: clamp(50px, 7%, 100px);
   background-color: #505050;
   overflow-x: hidden;
 }
 
 .main-container {
-  width: 95%;
+  width: calc(100% - clamp(50px, 5%, 100px));
   position: absolute;
-  top: 7%;
-  left: 5%;
-  padding-bottom: 10%;
+  top: clamp(50px, 7%, 100px);
+  left: clamp(50px, 5%, 100px);
+  padding-bottom: calc(clamp(50px, 5%, 100px) + 1%);
   background-color: #F4F4F4;
+}
+
+.term h2 {
+  margin: 1em 0;
+  font-size: 2.3em;
+  color: #04BD9B;
+}
+
+.term h4 {
+  margin: .3em 0;
+}
+
+.main-container-shrinked {
+  width: 55%;
 }
 
 .center-container {
@@ -96,6 +100,10 @@ nav {
   position: relative;
   margin: 0 auto;
   top: 10%;
+}
+
+.center-container-shrinked {
+  width: 80%;
 }
 
 .table-column-names, .course-entry {
@@ -128,13 +136,142 @@ nav {
   padding: 0 .8em;
 }
 
-.course-details-panel {
+.details-panel {
   display: none;
-  height: 93%;
-  width: 45%;
+  height: calc(100% - clamp(50px, 7%, 100px));
+  width: calc(45% - clamp(50px, 5%, 100px));
+  background-color: white;
   position: fixed;
   z-index: 1;
   right: 0;
-  top: 7%;
+  top: clamp(50px, 7%, 100px);
   overflow-x: hidden;
+}
+
+.details-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.details-exit {
+  font-size: 1.5em;
+  position: absolute;
+  top: 1em;
+  right: 1em;
+}
+
+.details-container h2 {
+  margin: 1em 0;
+  font-size: 2.3em;
+  color: #505050;
+}
+
+.details-container h3 {
+  font-weight: normal;
+  margin: 1em 0;
+  font-size: 1.5em;
+  color: #505050;
+}
+
+.details-course-description {
+  color: #505050;
+  text-align: justify;
+}
+
+.details-scores {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 2em;
+}
+
+.criterion-score {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.score {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3em;
+  height: 3em;
+  background-color: #505050;
+  border-radius: 50%;
+}
+
+.score p {
+  font-size: 1.2em;
+  color: white;
+  font-weight: normal;
+}
+
+.total-score {
+  background-color: #04BD9B;
+}
+
+.criterion {
+  font-size: .8em;
+  text-align: center;
+  margin: 1em 0;
+  color: #505050;
+}
+
+.details-chart img {
+  width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  .remove-on-mobile {
+    display: none;
+  }
+  .sidebar {
+    height: clamp(50px, 5%, 100px);
+    width: 100%;
+    bottom: 0;
+    top: auto;
+  }
+  .main-container {
+    width: 100%;
+    left: 0;
+  }
+  .center-container {
+    width: 90%;
+  }
+  .searchbar {
+    display: none;
+  }
+  .nav-container {
+    width: 90%;
+  }
+  .table-column-names, .course-entry {
+    font-size: .8em;
+  }
+  .term h2 {
+    margin: .7em 0;
+    font-size: 2.1em;
+  }
+  .details-panel {
+    width: 100%;
+  }
+  .details-container {
+    width: 90%;
+  }
+  .details-container > h2 {
+    margin: .7em 0;
+    font-size: 2.1em;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 800px) {
+  .center-container {
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 992px) {
+  .center-container {
+    width: 80%;
+  }
 }
