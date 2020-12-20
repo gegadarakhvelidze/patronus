@@ -1,0 +1,345 @@
+[
+    {
+        "term": "Autumn 2020",
+        "courses": [
+            {
+                "name": "Machine Learning",
+                "id": "CS001",
+                "tutor": {
+                    "name": "John Doe",
+                    "id": "0001",
+                    "occupation": "Data Scientist",
+                    "email": "random@email.com",
+                    "phone": "599 12 13 **",
+                    "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer non tempus justo, sit amet feugiat orci. Cras bibendum hendrerit consequat. Duis gravida porttitor lectus sed scelerisque. Donec a rhoncus nibh. Quisque erat ligula, ullamcorper id mollis eu, consequat id sapien. Sed iaculis tincidunt nibh nec bibendum. Pellentesque ac metus sed tortor cursus gravida id at leo. Sed varius nulla semper suscipit ultrices. Morbi ultrices dictum velit, dapibus suscipit massa sollicitudin ut. Vivamus mollis lorem sit amet tortor vestibulum pellentesque. Vestibulum a porttitor mi. Fusce sollicitudin mi quis lobortis vehicula."
+                },
+                "category": "MACS",
+                "credits": 6,
+                "isSelected": true,
+                "score": 97,
+                "criterionScores": [
+                    {
+                        "criterion": "Activity",
+                        "score": 20
+                    },
+                    {
+                        "criterion": "Homework",
+                        "score": 30
+                    },
+                    {
+                        "criterion": "Midterm",
+                        "score": 17
+                    },
+                    {
+                        "criterion": "Final Exam",
+                        "score": 30
+                    }
+                ],
+                "grade": "A",
+                "description": "Machine learning is the science of getting computers to act without being explicitly programmed. In the past decade, machine learning has given us self-driving cars, practical speech recognition, effective web search, and a vastly improved understanding of the human genome. Machine learning is so pervasive today that you probably use it dozens of times a day without knowing it.",
+                "gradeChart": "../BooKeeper/assets/Grade Distribution.png"
+            },
+            {
+                "name": "Web Development",
+                "id": "CS002",
+                "tutor": {
+                    "name": "Bruce Wayne",
+                    "id": "0002",
+                    "occupation": "Web Developer",
+                    "email": "random@email.com",
+                    "phone": "599 12 10 **",
+                    "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer non tempus justo, sit amet feugiat orci. Cras bibendum hendrerit consequat. Duis gravida porttitor lectus sed scelerisque. Donec a rhoncus nibh. Quisque erat ligula, ullamcorper id mollis eu, consequat id sapien. Sed iaculis tincidunt nibh nec bibendum. Pellentesque ac metus sed tortor cursus gravida id at leo. Sed varius nulla semper suscipit ultrices. Morbi ultrices dictum velit, dapibus suscipit massa sollicitudin ut. Vivamus mollis lorem sit amet tortor vestibulum pellentesque. Vestibulum a porttitor mi. Fusce sollicitudin mi quis lobortis vehicula."
+                },
+                "category": "MACS",
+                "credits": 6,
+                "isSelected": true,
+                "score": 91,
+                "criterionScores": [
+                    {
+                        "criterion": "Activity",
+                        "score": 20
+                    },
+                    {
+                        "criterion": "Homework",
+                        "score": 30
+                    },
+                    {
+                        "criterion": "Midterm",
+                        "score": 11
+                    },
+                    {
+                        "criterion": "Final Exam",
+                        "score": 30
+                    }
+                ],
+                "grade": "A",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer non tempus justo, sit amet feugiat orci. Cras bibendum hendrerit consequat. Duis gravida porttitor lectus sed scelerisque. Donec a rhoncus nibh. Quisque erat ligula, ullamcorper id mollis eu, consequat id sapien. Sed iaculis tincidunt nibh nec bibendum. Pellentesque ac metus sed tortor cursus gravida id at leo. Sed varius nulla semper suscipit ultrices. Morbi ultrices dictum velit, dapibus suscipit massa sollicitudin ut. Vivamus mollis lorem sit amet tortor vestibulum pellentesque. Vestibulum a porttitor mi. Fusce sollicitudin mi quis lobortis vehicula.",
+                "gradeChart": "../BooKeeper/assets/Grade Distribution.png"
+            },
+            {
+                "name": "Artificial Intelligence",
+                "id": "CS003",
+                "tutor": {
+                    "name": "Lorenzo Salgado",
+                    "id": "0003",
+                    "occupation": "Data Scientist",
+                    "email": "random@email.com",
+                    "phone": "599 12 21 **",
+                    "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer non tempus justo, sit amet feugiat orci. Cras bibendum hendrerit consequat. Duis gravida porttitor lectus sed scelerisque. Donec a rhoncus nibh. Quisque erat ligula, ullamcorper id mollis eu, consequat id sapien. Sed iaculis tincidunt nibh nec bibendum. Pellentesque ac metus sed tortor cursus gravida id at leo. Sed varius nulla semper suscipit ultrices. Morbi ultrices dictum velit, dapibus suscipit massa sollicitudin ut. Vivamus mollis lorem sit amet tortor vestibulum pellentesque. Vestibulum a porttitor mi. Fusce sollicitudin mi quis lobortis vehicula."
+                },
+                "category": "MACS",
+                "credits": 6,
+                "isSelected": true,
+                "score": 92,
+                "criterionScores": [
+                    {
+                        "criterion": "Activity",
+                        "score": 15
+                    },
+                    {
+                        "criterion": "Homework",
+                        "score": 30
+                    },
+                    {
+                        "criterion": "Midterm",
+                        "score": 17
+                    },
+                    {
+                        "criterion": "Final Exam",
+                        "score": 30
+                    }
+                ],
+                "grade": "A",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer non tempus justo, sit amet feugiat orci. Cras bibendum hendrerit consequat. Duis gravida porttitor lectus sed scelerisque. Donec a rhoncus nibh. Quisque erat ligula, ullamcorper id mollis eu, consequat id sapien. Sed iaculis tincidunt nibh nec bibendum. Pellentesque ac metus sed tortor cursus gravida id at leo. Sed varius nulla semper suscipit ultrices. Morbi ultrices dictum velit, dapibus suscipit massa sollicitudin ut. Vivamus mollis lorem sit amet tortor vestibulum pellentesque. Vestibulum a porttitor mi. Fusce sollicitudin mi quis lobortis vehicula.",
+                "gradeChart": "../BooKeeper/assets/Grade Distribution.png"
+            },
+            {
+                "name": "Discrete Mathematics",
+                "id": "CS004",
+                "tutor": {
+                    "name": "Barry Allen",
+                    "id": "0004",
+                    "occupation": "The Flash",
+                    "email": "random@email.com",
+                    "phone": "599 12 00 **",
+                    "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer non tempus justo, sit amet feugiat orci. Cras bibendum hendrerit consequat. Duis gravida porttitor lectus sed scelerisque. Donec a rhoncus nibh. Quisque erat ligula, ullamcorper id mollis eu, consequat id sapien. Sed iaculis tincidunt nibh nec bibendum. Pellentesque ac metus sed tortor cursus gravida id at leo. Sed varius nulla semper suscipit ultrices. Morbi ultrices dictum velit, dapibus suscipit massa sollicitudin ut. Vivamus mollis lorem sit amet tortor vestibulum pellentesque. Vestibulum a porttitor mi. Fusce sollicitudin mi quis lobortis vehicula."
+                },
+                "category": "MACS",
+                "credits": 4,
+                "isSelected": true,
+                "score": 83,
+                "criterionScores": [
+                    {
+                        "criterion": "Activity",
+                        "score": 10
+                    },
+                    {
+                        "criterion": "Homework",
+                        "score": 30
+                    },
+                    {
+                        "criterion": "Midterm",
+                        "score": 13
+                    },
+                    {
+                        "criterion": "Final Exam",
+                        "score": 30
+                    }
+                ],
+                "grade": "B",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer non tempus justo, sit amet feugiat orci. Cras bibendum hendrerit consequat. Duis gravida porttitor lectus sed scelerisque. Donec a rhoncus nibh. Quisque erat ligula, ullamcorper id mollis eu, consequat id sapien. Sed iaculis tincidunt nibh nec bibendum. Pellentesque ac metus sed tortor cursus gravida id at leo. Sed varius nulla semper suscipit ultrices. Morbi ultrices dictum velit, dapibus suscipit massa sollicitudin ut. Vivamus mollis lorem sit amet tortor vestibulum pellentesque. Vestibulum a porttitor mi. Fusce sollicitudin mi quis lobortis vehicula.",
+                "gradeChart": "../BooKeeper/assets/Grade Distribution.png"
+            }
+        ]
+    },
+    {
+        "term": "Spring 2020",
+        "courses": [
+            {
+                "name": "Data Analysis",
+                "id": "CS005",
+                "tutor": {
+                    "name": "Bruce Wayne",
+                    "id": "0002",
+                    "occupation": "Web Developer",
+                    "email": "random@email.com",
+                    "phone": "599 12 10 **",
+                    "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer non tempus justo, sit amet feugiat orci. Cras bibendum hendrerit consequat. Duis gravida porttitor lectus sed scelerisque. Donec a rhoncus nibh. Quisque erat ligula, ullamcorper id mollis eu, consequat id sapien. Sed iaculis tincidunt nibh nec bibendum. Pellentesque ac metus sed tortor cursus gravida id at leo. Sed varius nulla semper suscipit ultrices. Morbi ultrices dictum velit, dapibus suscipit massa sollicitudin ut. Vivamus mollis lorem sit amet tortor vestibulum pellentesque. Vestibulum a porttitor mi. Fusce sollicitudin mi quis lobortis vehicula."
+                },
+                "category": "MACS",
+                "credits": 6,
+                "isSelected": true,
+                "score": 91,
+                "criterionScores": [
+                    {
+                        "criterion": "Activity",
+                        "score": 20
+                    },
+                    {
+                        "criterion": "Homework",
+                        "score": 30
+                    },
+                    {
+                        "criterion": "Midterm",
+                        "score": 11
+                    },
+                    {
+                        "criterion": "Final Exam",
+                        "score": 30
+                    }
+                ],
+                "grade": "A",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer non tempus justo, sit amet feugiat orci. Cras bibendum hendrerit consequat. Duis gravida porttitor lectus sed scelerisque. Donec a rhoncus nibh. Quisque erat ligula, ullamcorper id mollis eu, consequat id sapien. Sed iaculis tincidunt nibh nec bibendum. Pellentesque ac metus sed tortor cursus gravida id at leo. Sed varius nulla semper suscipit ultrices. Morbi ultrices dictum velit, dapibus suscipit massa sollicitudin ut. Vivamus mollis lorem sit amet tortor vestibulum pellentesque. Vestibulum a porttitor mi. Fusce sollicitudin mi quis lobortis vehicula.",
+                "gradeChart": "../BooKeeper/assets/Grade Distribution.png"
+            },
+            {
+                "name": "Cryptography",
+                "id": "CS006",
+                "tutor": {
+                    "name": "John Doe",
+                    "id": "0001",
+                    "occupation": "Data Scientist",
+                    "email": "random@email.com",
+                    "phone": "599 12 13 **",
+                    "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer non tempus justo, sit amet feugiat orci. Cras bibendum hendrerit consequat. Duis gravida porttitor lectus sed scelerisque. Donec a rhoncus nibh. Quisque erat ligula, ullamcorper id mollis eu, consequat id sapien. Sed iaculis tincidunt nibh nec bibendum. Pellentesque ac metus sed tortor cursus gravida id at leo. Sed varius nulla semper suscipit ultrices. Morbi ultrices dictum velit, dapibus suscipit massa sollicitudin ut. Vivamus mollis lorem sit amet tortor vestibulum pellentesque. Vestibulum a porttitor mi. Fusce sollicitudin mi quis lobortis vehicula."
+                },
+                "category": "MACS",
+                "credits": 6,
+                "isSelected": true,
+                "score": 97,
+                "criterionScores": [
+                    {
+                        "criterion": "Activity",
+                        "score": 20
+                    },
+                    {
+                        "criterion": "Homework",
+                        "score": 30
+                    },
+                    {
+                        "criterion": "Midterm",
+                        "score": 17
+                    },
+                    {
+                        "criterion": "Final Exam",
+                        "score": 30
+                    }
+                ],
+                "grade": "A",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer non tempus justo, sit amet feugiat orci. Cras bibendum hendrerit consequat. Duis gravida porttitor lectus sed scelerisque. Donec a rhoncus nibh. Quisque erat ligula, ullamcorper id mollis eu, consequat id sapien. Sed iaculis tincidunt nibh nec bibendum. Pellentesque ac metus sed tortor cursus gravida id at leo. Sed varius nulla semper suscipit ultrices. Morbi ultrices dictum velit, dapibus suscipit massa sollicitudin ut. Vivamus mollis lorem sit amet tortor vestibulum pellentesque. Vestibulum a porttitor mi. Fusce sollicitudin mi quis lobortis vehicula.",
+                "gradeChart": "../BooKeeper/assets/Grade Distribution.png"
+            },
+            {
+                "name": "Economics",
+                "id": "ECON001",
+                "tutor": {
+                    "name": "Mike Posner",
+                    "id": "0005",
+                    "occupation": "Songwriter",
+                    "email": "random@email.com",
+                    "phone": "599 02 10 **",
+                    "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer non tempus justo, sit amet feugiat orci. Cras bibendum hendrerit consequat. Duis gravida porttitor lectus sed scelerisque. Donec a rhoncus nibh. Quisque erat ligula, ullamcorper id mollis eu, consequat id sapien. Sed iaculis tincidunt nibh nec bibendum. Pellentesque ac metus sed tortor cursus gravida id at leo. Sed varius nulla semper suscipit ultrices. Morbi ultrices dictum velit, dapibus suscipit massa sollicitudin ut. Vivamus mollis lorem sit amet tortor vestibulum pellentesque. Vestibulum a porttitor mi. Fusce sollicitudin mi quis lobortis vehicula."
+                },
+                "category": "ECON",
+                "credits": 5,
+                "isSelected": true,
+                "score": 71,
+                "criterionScores": [
+                    {
+                        "criterion": "Activity",
+                        "score": 20
+                    },
+                    {
+                        "criterion": "Homework",
+                        "score": 10
+                    },
+                    {
+                        "criterion": "Midterm",
+                        "score": 11
+                    },
+                    {
+                        "criterion": "Final Exam",
+                        "score": 30
+                    }
+                ],
+                "grade": "C",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer non tempus justo, sit amet feugiat orci. Cras bibendum hendrerit consequat. Duis gravida porttitor lectus sed scelerisque. Donec a rhoncus nibh. Quisque erat ligula, ullamcorper id mollis eu, consequat id sapien. Sed iaculis tincidunt nibh nec bibendum. Pellentesque ac metus sed tortor cursus gravida id at leo. Sed varius nulla semper suscipit ultrices. Morbi ultrices dictum velit, dapibus suscipit massa sollicitudin ut. Vivamus mollis lorem sit amet tortor vestibulum pellentesque. Vestibulum a porttitor mi. Fusce sollicitudin mi quis lobortis vehicula.",
+                "gradeChart": "../BooKeeper/assets/Grade Distribution.png"
+            },
+            {
+                "name": "Statistics",
+                "id": "ECON002",
+                "tutor": {
+                    "name": "John Doe",
+                    "id": "0001",
+                    "occupation": "Data Scientist",
+                    "email": "random@email.com",
+                    "phone": "599 12 13 **",
+                    "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer non tempus justo, sit amet feugiat orci. Cras bibendum hendrerit consequat. Duis gravida porttitor lectus sed scelerisque. Donec a rhoncus nibh. Quisque erat ligula, ullamcorper id mollis eu, consequat id sapien. Sed iaculis tincidunt nibh nec bibendum. Pellentesque ac metus sed tortor cursus gravida id at leo. Sed varius nulla semper suscipit ultrices. Morbi ultrices dictum velit, dapibus suscipit massa sollicitudin ut. Vivamus mollis lorem sit amet tortor vestibulum pellentesque. Vestibulum a porttitor mi. Fusce sollicitudin mi quis lobortis vehicula."
+                },
+                "category": "ECON",
+                "credits": 6,
+                "isSelected": true,
+                "score": 97,
+                "criterionScores": [
+                    {
+                        "criterion": "Activity",
+                        "score": 20
+                    },
+                    {
+                        "criterion": "Homework",
+                        "score": 30
+                    },
+                    {
+                        "criterion": "Midterm",
+                        "score": 17
+                    },
+                    {
+                        "criterion": "Final Exam",
+                        "score": 30
+                    }
+                ],
+                "grade": "A",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer non tempus justo, sit amet feugiat orci. Cras bibendum hendrerit consequat. Duis gravida porttitor lectus sed scelerisque. Donec a rhoncus nibh. Quisque erat ligula, ullamcorper id mollis eu, consequat id sapien. Sed iaculis tincidunt nibh nec bibendum. Pellentesque ac metus sed tortor cursus gravida id at leo. Sed varius nulla semper suscipit ultrices. Morbi ultrices dictum velit, dapibus suscipit massa sollicitudin ut. Vivamus mollis lorem sit amet tortor vestibulum pellentesque. Vestibulum a porttitor mi. Fusce sollicitudin mi quis lobortis vehicula.",
+                "gradeChart": "../BooKeeper/assets/Grade Distribution.png"
+            },
+            {
+                "name": "Physics",
+                "id": "PHY001",
+                "tutor": {
+                    "name": "Isaac Newton",
+                    "id": "0006",
+                    "occupation": "Genius",
+                    "email": "random@email.com",
+                    "phone": "599 12 13 **",
+                    "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer non tempus justo, sit amet feugiat orci. Cras bibendum hendrerit consequat. Duis gravida porttitor lectus sed scelerisque. Donec a rhoncus nibh. Quisque erat ligula, ullamcorper id mollis eu, consequat id sapien. Sed iaculis tincidunt nibh nec bibendum. Pellentesque ac metus sed tortor cursus gravida id at leo. Sed varius nulla semper suscipit ultrices. Morbi ultrices dictum velit, dapibus suscipit massa sollicitudin ut. Vivamus mollis lorem sit amet tortor vestibulum pellentesque. Vestibulum a porttitor mi. Fusce sollicitudin mi quis lobortis vehicula."
+                },
+                "category": "PHY",
+                "credits": 4,
+                "isSelected": true,
+                "score": 95,
+                "criterionScores": [
+                    {
+                        "criterion": "Activity",
+                        "score": 20
+                    },
+                    {
+                        "criterion": "Homework",
+                        "score": 28
+                    },
+                    {
+                        "criterion": "Midterm",
+                        "score": 17
+                    },
+                    {
+                        "criterion": "Final Exam",
+                        "score": 30
+                    }
+                ],
+                "grade": "A",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer non tempus justo, sit amet feugiat orci. Cras bibendum hendrerit consequat. Duis gravida porttitor lectus sed scelerisque. Donec a rhoncus nibh. Quisque erat ligula, ullamcorper id mollis eu, consequat id sapien. Sed iaculis tincidunt nibh nec bibendum. Pellentesque ac metus sed tortor cursus gravida id at leo. Sed varius nulla semper suscipit ultrices. Morbi ultrices dictum velit, dapibus suscipit massa sollicitudin ut. Vivamus mollis lorem sit amet tortor vestibulum pellentesque. Vestibulum a porttitor mi. Fusce sollicitudin mi quis lobortis vehicula.",
+                "gradeChart": "../BooKeeper/assets/Grade Distribution.png"
+            }
+        ]
+    }
+]

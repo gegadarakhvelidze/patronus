@@ -122,14 +122,11 @@ nav {
 }
 
 .course-entry-container {
+  border-radius: 0.8em;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.16);
   background-color: white;
-  border-radius: 10px;
   padding: .8em .8em;
   margin: .5em 0;
-}
-
-.course-entry-container:hover {
-  box-shadow: 0 0 0.4em rgba(50, 50, 50, 0.3);
 }
 
 .table-column-names {
@@ -208,7 +205,20 @@ nav {
 }
 
 .total-score {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3em;
+  height: 3em;
+  background-color: #505050;
+  border-radius: 50%;
   background-color: #04BD9B;
+}
+
+.total-score p {
+  font-size: 1.2em;
+  color: white;
+  font-weight: normal;
 }
 
 .criterion {
@@ -218,8 +228,14 @@ nav {
   color: #505050;
 }
 
+.details-chart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .details-chart img {
-  width: 100%;
+  width: 80%;
 }
 
 @media only screen and (max-width: 600px) {
