@@ -331,5 +331,82 @@ document.addEventListener("click", (e) => {
         container.classList.remove("main-container-shrinked");
         centerContainer.classList.remove("center-container-shrinked");
         courseDetails.style.display = "none";
+    } else if (e.target.id == "login-button") {
+        // not the best approach of replacing entire html
+        document.querySelector("head").innerHTML = `
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="css/main.css">
+            <title>BooKeeper | Dashboard</title>
+        `;
+        document.querySelector("body").innerHTML = `
+            <div class="background"></div>
+            <nav>
+                <div class="nav-container">
+                    <a href="#" class="logo">
+                        BooKeeper
+                    </a>
+                    <div class="searchbar">
+                        <input type="text" placeholder="Search" class="search">
+                    </div>
+                    <div class="account">
+                        <div class="profile-pic">
+        
+                        </div>
+                        <div class="username">
+                            Demo User
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="sidebar">
+                <a href="#/dashboard" class="tab">
+                    <div class="tab-icon">
+                        <img src="../BooKeeper/assets/dashboard.png">
+                    </div>
+                    <div class="tab-name">
+                        Dashboard
+                    </div>
+                </a>
+                <a href="#/profile" class="tab">
+                    <div class="tab-icon">
+                        <img src="../BooKeeper/assets/profile.png">
+                    </div>
+                    <div class="tab-name">
+                        Profile
+                    </div>
+                </a>
+                <a href="#/courses" class="tab">
+                    <div class="tab-icon">
+                        <img src="../BooKeeper/assets/selection.png">
+                    </div>
+                    <div class="tab-name">
+                        Course Selection
+                    </div>
+                </a>
+            </div>
+            <div class="main-container">
+                <div class="center-container"></div>
+                <div class="details-panel">
+                    <div class="details-container">
+                        <div class="details-exit">
+                            <a href="#">X</a>
+                        </div>
+                        <h2>Course Name</h2>
+                        <h3>Tutor</h3>
+                        <div class="details-course-description"></div>
+                        <div class="details-scores"></div>
+                        <div class="details-chart">
+                            <img src="../BooKeeper/assets/Grade Distribution.png" alt="Grade Distribution">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Script -->
+            <script src="https://unpkg.com/navigo@6.0.2/lib/navigo.min.js"></script>
+            <script src="js/main.js"></script>
+        `;
+        router.navigate("/profile");
     }
 })

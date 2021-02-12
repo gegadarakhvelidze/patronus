@@ -17,5 +17,3 @@ BooKeeper is a learning management system (LMS) bringing variety of educational 
 * All Courses
   * Filters
   * Course Registration
-* Tutor's Page (for course administration)
-* Admin Page
